@@ -30,10 +30,10 @@ const Register = ({ setCurrentView, setPhone }: Props) => {
       className="max-w-sm flex flex-col items-center"
       data-testid="register-page"
     >
-      <h1 className="text-large-semi uppercase mb-6">Become a Savraa Member</h1>
+      <h1 className="text-large-semi uppercase mb-6">Become a Svraa Member</h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-4">
-        Create or login your Savraa Member profile, and get access to an
-        enhanced shopping experience.
+        Create or login your Svraa Member profile, and get access to an enhanced
+        shopping experience.
       </p>
       <form className="w-full flex flex-col" action={formAction}>
         <div className="flex flex-col w-full gap-y-2">
@@ -86,7 +86,7 @@ const Register = ({ setCurrentView, setPhone }: Props) => {
         </div>
         <ErrorMessage error={message} data-testid="register-error" />
         <span className="text-center text-ui-fg-base text-small-regular mt-6">
-          By creating an account, you agree to Savraa&apos;s{" "}
+          By creating an account, you agree to Svraa&apos;s{" "}
           <LocalizedClientLink
             href="/content/privacy-policy"
             className="underline"
