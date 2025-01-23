@@ -63,14 +63,14 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
             label="First name"
             name="first_name"
             required
-            defaultValue={customer.first_name ?? "Not set"}
+            defaultValue={customer.first_name ?? ""}
             data-testid="first-name-input"
           />
           <Input
             label="Last name"
             name="last_name"
             required
-            defaultValue={customer.last_name ?? "Not set"}
+            defaultValue={customer.last_name ?? ""}
             data-testid="last-name-input"
           />
         </div>
