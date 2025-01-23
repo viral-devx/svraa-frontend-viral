@@ -90,7 +90,8 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Svraa. All rights reserved.
+                        © {new Date().getFullYear()} Savraa. All rights
+                        reserved.
                       </Text>
                     </div>
                   </div>

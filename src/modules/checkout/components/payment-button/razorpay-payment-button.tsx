@@ -70,7 +70,7 @@ export const RazorpayPaymentButton = ({
         amount: authorizedCart.order.total * 100,
         order_id: orderData.id,
         currency: cart.currency_code.toUpperCase() as CurrencyCode,
-        name: process.env.COMPANY_NAME ?? "Svraa",
+        name: process.env.COMPANY_NAME ?? "Savraa",
         description: `Order number ${orderData.id}`,
         remember_customer: true,
 
