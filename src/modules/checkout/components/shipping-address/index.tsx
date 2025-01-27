@@ -209,6 +209,15 @@ const ShippingAddress = ({
           autoComplete="tel"
           value={formData["shipping_address.phone"]}
           onChange={handleChange}
+          onKeyDown={(e) => {
+            if (["e", ".", "+", "-"].includes(e.key)) {
+              e.preventDefault()
+            }
+          }}
+          minLength={10}
+          maxLength={10}
+          type="number"
+          required
           data-testid="shipping-phone-input"
         />
       </div>
