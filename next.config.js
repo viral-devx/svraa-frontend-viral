@@ -38,16 +38,8 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "207c-2401-4900-5766-6222-4da0-85b1-3646-a405.ngrok-free.app"
+        hostname: "d45e-2402-a00-172-b6f8-45a7-a315-ad5-9632.ngrok-free.app"
       },
-      {
-        protocol: "https",
-        hostname: "68a4-2402-a00-172-b6f8-21a6-d3f4-be3e-8a25.ngrok-free.app"
-      },
-      {
-        protocol: "https",
-        hostname: "cf5e-2402-a00-172-b6f8-d561-6312-f2bb-7397.ngrok-free.app"
-      }
     ],
   },
 }
