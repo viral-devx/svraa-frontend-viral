@@ -22,7 +22,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                 <Image
                   src={image.url.replace(
                     "http://localhost:9000",
-                    "https://68a4-2402-a00-172-b6f8-21a6-d3f4-be3e-8a25.ngrok-free.app"
+                    "https://d45e-2402-a00-172-b6f8-45a7-a315-ad5-9632.ngrok-free.app"
                   )}
                   priority={index <= 2 ? true : false}
                   className="absolute inset-0 rounded-rounded"
