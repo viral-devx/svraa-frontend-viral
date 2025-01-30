@@ -23,8 +23,8 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   "data-testid": dataTestid,
 }) => {
   let initialImage = thumbnail || images?.[0]?.url
-  initialImage = initialImage.includes("http://localhost:9000")
-    ? initialImage.replace(
+  initialImage = initialImage?.includes("http://localhost:9000")
+    ? initialImage?.replace(
         "http://localhost:9000",
         "https://62c4-2402-a00-172-c515-b0ba-f6b9-20b3-2294.ngrok-free.app"
       )
