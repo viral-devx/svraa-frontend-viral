@@ -11,7 +11,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
     <div className="flex items-start relative">
       <div className="flex flex-col flex-1 small:mx-16 gap-y-4">
         {images.map((image, index) => {
-          console.log(image.url, "::::: image.url")
           return (
             <Container
               key={image.id}
@@ -20,10 +19,14 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             >
               {!!image.url && (
                 <Image
-                  src={image.url.replace(
-                    "http://localhost:9000",
-                    "https://62c4-2402-a00-172-c515-b0ba-f6b9-20b3-2294.ngrok-free.app"
-                  )}
+                  src={
+                    image.url.includes("http://localhost:9000")
+                      ? image.url.replace(
+                          "http://localhost:9000",
+                          "https://62c4-2402-a00-172-c515-b0ba-f6b9-20b3-2294.ngrok-free.app"
+                        )
+                      : image.url
+                  }
                   priority={index <= 2 ? true : false}
                   className="absolute inset-0 rounded-rounded"
                   alt={`Product image ${index + 1}`}
