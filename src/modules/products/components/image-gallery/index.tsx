@@ -23,7 +23,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                     image.url.includes("http://localhost:9000")
                       ? image.url.replace(
                           "http://localhost:9000",
-                          "https://6a41-14-102-163-116.ngrok-free.app"
+                          "https://5a21-2402-a00-172-b6f8-758e-1737-db25-e712.ngrok-free.app"
                         )
                       : image.url
                   }

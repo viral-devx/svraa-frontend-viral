@@ -26,7 +26,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   initialImage = initialImage?.includes("http://localhost:9000")
     ? initialImage?.replace(
         "http://localhost:9000",
-        "https://6a41-14-102-163-116.ngrok-free.app"
+        "https://5a21-2402-a00-172-b6f8-758e-1737-db25-e712.ngrok-free.app"
       )
     : initialImage
   return (
